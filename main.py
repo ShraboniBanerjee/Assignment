@@ -58,6 +58,6 @@ def export_to_csv(data, filename):
 
 if __name__ == "__main__":
     base_url = "https://www.amazon.in/s?k=bags"
-    num_pages = 20
+    num_pages = 200
     scraped_data = scrape_product_listings(base_url, num_pages)
     export_to_csv(scraped_data, "amazon_bags_data.csv")
